@@ -1,0 +1,59 @@
+<!-- This is my first website -->
+<html>
+    <head>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+
+        <title>Zain's website</title>
+        <a href="index.html">Home</a>
+         <!-- &nbsp tells a web browser to create a space between two words without going to the next line. -->
+        &nbsp;
+        <a href="aboutme.html">About Me</a>
+        &nbsp;
+        <a href="address.html">Address</a>
+        &nbsp;
+        <hr>
+        <title>Hello World</title> 
+        <meta>This is my first website</meta>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="format.css">
+    </head>
+    <body>
+        <!-- The onclick attribute is the code	     
+             that happens when the element is clicked.	     
+             The value of the attribute is some	     
+             javascript code.	     
+             In this case it creates an alert 	     
+             pop up dialog
+ 	    -->
+        <h1 id="title" onclick="sayHello();">Introduction</h1>
+        <img src="capture30.PNG" alt="Sorry" width="250px">
+        <p>
+            My name is Zain and I read in ninth grade. 
+        </p>
+        <!--the script tag is where you can putmore complex scripts-->
+        <script type="text/javascript">
+            function sayHello(){
+                 console.log("goodbye");
+                 $("#title").html("Goodbye World");
+                 $("#title").click(function () {
+                     $("#title").html("Hello");
+                     $("#title").off("click");
+                 });
+            };
+
+        </script>
+        <div class="container">
+            <div class="row">
+             <div class="col-md-6">
+                 Some content for panel 1.
+             </div>
+             <div class="col-md-6">
+                 Some content for panel 2.
+             </div>
+            </div>
+        </div>
+    </body>
+</html>
